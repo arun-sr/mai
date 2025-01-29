@@ -256,3 +256,33 @@ footer {
   .social-media a:hover {
     text-decoration: underline;
   }
+
+  .about_container {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 10 auto;
+}
+  .about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    gap: 40px;
+    padding: 50px 10%;
+}
+
+.about .image img {
+    width: 200px;
+    height: 120px;
+    max-width: 450px;
+    max-height: 450px;
+    border-radius: 10px;
+    object-fit: fill;
+    object-position: center; 
+}
+
+.about .content {
+    flex: 1;
+}  
