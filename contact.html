@@ -1,65 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - MITIGAI</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact MITIGAI - Get in touch for AI solutions, cybersecurity, web development, and app development services.">
+  <title>Contact Us - MITIGAI</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <!-- Header -->
+  <header class="header" id="header">
     <div class="container">
-        <div class="logo">MitigAI</div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="product.html">Products</a>
-            <a href="about.html">About Us</a>
-            <a href="contact.html">Contact Us</a>
-        </nav>
+      <nav class="nav">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">M</div>
+          MITIG<span>AI</span>
+        </a>
+        
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item">
+            <a href="services.html" class="nav-link">Services</a>
+            <ul class="dropdown">
+              <li><a href="services-ai.html" class="dropdown-link">AI Solutions</a></li>
+              <li><a href="services-cybersecurity.html" class="dropdown-link">Cybersecurity</a></li>
+              <li><a href="services-web.html" class="dropdown-link">Web Development</a></li>
+              <li><a href="services-app.html" class="dropdown-link">App Development</a></li>
+            </ul>
+          </li>
+          <li><a href="industries.html" class="nav-link">Industries</a></li>
+          <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+          <li class="nav-cta">
+            <a href="contact.html" class="btn btn-primary btn-sm">Get Started</a>
+          </li>
+        </ul>
+        
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
     </div>
-</header>
-    
-    <section id="contact" class="contact">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <h2>Contact Us</h2>
-              <p>If you have any questions, concerns, or feedback, feel free to reach out to us. We are here to help!</p>
-              <form action="submit" method="POST">
-                <div class="form-group">
-                  <label for="name">Your Name</label>
-                  <input type="text" id="name" name="name" class="form-control" required>
-                </div>
-                <div class="form-group">
-                  <label for="email">Your Email</label>
-                  <input type="email" id="email" name="email" class="form-control" required>
-                </div>
-                <div class="form-group">
-                  <label for="message">Your Message</label>
-                  <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-              </form>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="section contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <span class="section-label">Get In Touch</span>
+          <h2>Let's Start a Conversation</h2>
+          <p>Ready to transform your business with AI-powered technology solutions? We'd love to hear about your project and explore how we can help.</p>
+          
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div>
+                <h5>Office Location</h5>
+                <p>212, Nila, Technopark<br>Trivandrum, Kerala 695581<br>India</p>
+              </div>
             </div>
-            <div class="col-md-6">
-              <br>
-                <h3>Our Location</h3>
-              <p>212, Nila, Technopark, Trivandrum, Kerala, India</p>
-              <p>sales@mitigai.com;  +91-8943438494</p>
-              
-              <h4>Follow Us</h4>
-              <ul class="social-media">
-                <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
-                <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
-                <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
-              </ul>
+            
+            <div class="contact-item">
+              <div class="contact-icon">📧</div>
+              <div>
+                <h5>Email Us</h5>
+                <p><a href="mailto:sales@mitigai.com">sales@mitigai.com</a><br>
+                <a href="mailto:info@mitigai.com">info@mitigai.com</a></p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">📞</div>
+              <div>
+                <h5>Call Us</h5>
+                <p><a href="tel:+918943438494">+91-8943438494</a></p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">🕐</div>
+              <div>
+                <h5>Business Hours</h5>
+                <p>Monday - Friday: 9:00 AM - 6:00 PM IST<br>
+                Saturday - Sunday: Closed</p>
+              </div>
             </div>
           </div>
+          
+          <h5 style="margin-bottom: 16px; color: var(--dark);">Connect With Us</h5>
+          <div class="social-links">
+            <a href="https://linkedin.com/company/mitigai" class="social-link" aria-label="LinkedIn">in</a>
+            <a href="https://twitter.com/mitigai" class="social-link" aria-label="Twitter">𝕏</a>
+            <a href="https://github.com/mitigai" class="social-link" aria-label="GitHub">⌘</a>
+          </div>
         </div>
-      </section>
+        
+        <!-- Contact Form -->
+        <div class="contact-form-wrapper">
+          <h3>Send Us a Message</h3>
+          <form action="https://formspree.io/f/xbdwebpo" method="POST" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" class="form-control" placeholder="John" required>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" class="form-control" placeholder="Doe" required>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="john@company.com" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" class="form-control" placeholder="+91 9876543210">
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="company">Company / Organization</label>
+              <input type="text" id="company" name="company" class="form-control" placeholder="Your Company Name">
+            </div>
+            
+            <div class="form-group">
+              <label for="service">Service Interested In</label>
+              <select id="service" name="service" class="form-control">
+                <option value="">Select a service...</option>
+                <option value="ai">AI Solutions</option>
+                <option value="cybersecurity">Cybersecurity</option>
+                <option value="web">Web Development</option>
+                <option value="app">App Development</option>
+                <option value="consulting">Technology Consulting</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="budget">Project Budget (Optional)</label>
+              <select id="budget" name="budget" class="form-control">
+                <option value="">Select budget range...</option>
+                <option value="<10k">Less than $10,000</option>
+                <option value="10k-25k">$10,000 - $25,000</option>
+                <option value="25k-50k">$25,000 - $50,000</option>
+                <option value="50k-100k">$50,000 - $100,000</option>
+                <option value=">100k">More than $100,000</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Your Message *</label>
+              <textarea id="message" name="message" class="form-control" placeholder="Tell us about your project, challenges, and goals..." rows="5" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+              Send Message
+            </button>
+            
+            <p style="margin-top: 16px; font-size: 0.875rem; color: var(--gray-500); text-align: center;">
+              We'll respond within 24 business hours.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="section section-gray" style="padding: 60px 0;">
+    <div class="container">
+      <div style="background: var(--gradient-primary); border-radius: var(--radius-lg); height: 400px; display: flex; align-items: center; justify-content: center; color: var(--white);">
+        <div style="text-align: center;">
+          <div style="font-size: 4rem; margin-bottom: 16px;">📍</div>
+          <h3 style="color: var(--white); margin-bottom: 8px;">MITIGAI Office</h3>
+          <p style="color: rgba(255,255,255,0.8); margin-bottom: 0;">212, Nila, Technopark, Trivandrum</p>
+          <a href="https://maps.google.com/?q=Technopark+Trivandrum" target="_blank" class="btn btn-white btn-sm" style="margin-top: 20px;">
+            Open in Google Maps
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">FAQ</span>
+        <h2>Common Questions</h2>
+        <p>Quick answers to questions you might have.</p>
+      </div>
+      
+      <div class="sub-services-grid" style="max-width: 900px; margin: 0 auto;">
+        <div class="sub-service-card">
+          <h4>How quickly can you start a new project?</h4>
+          <p>For most projects, we can begin discovery and planning within 1-2 weeks of contract signing. Complex enterprise projects may require additional preparation time.</p>
+        </div>
+        
+        <div class="sub-service-card">
+          <h4>Do you work with startups?</h4>
+          <p>Yes! We work with organizations of all sizes, from early-stage startups to large enterprises. We tailor our engagement model to fit your needs and budget.</p>
+        </div>
+        
+        <div class="sub-service-card">
+          <h4>What industries do you specialize in?</h4>
+          <p>We have deep expertise in Healthcare, Finance, Education, Government, and Sustainability. However, our technical capabilities apply across many other industries as well.</p>
+        </div>
+        
+        <div class="sub-service-card">
+          <h4>Do you offer ongoing support?</h4>
+          <p>Yes, we offer comprehensive maintenance and support packages. We believe in long-term partnerships and ensuring your solution continues to deliver value.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">M</div>
+            MITIG<span>AI</span>
+          </a>
+          <p>AI-Powered Innovation Across Industries. We deliver intelligent technology solutions that transform businesses and drive growth.</p>
+          <div class="social-links mt-3">
+            <a href="https://linkedin.com/company/mitigai" class="social-link" aria-label="LinkedIn">in</a>
+            <a href="https://twitter.com/mitigai" class="social-link" aria-label="Twitter">𝕏</a>
+            <a href="https://github.com/mitigai" class="social-link" aria-label="GitHub">⌘</a>
+          </div>
+        </div>
+        
+        <div class="footer-column">
+          <h5>Services</h5>
+          <ul class="footer-links">
+            <li><a href="services-ai.html">AI Solutions</a></li>
+            <li><a href="services-cybersecurity.html">Cybersecurity</a></li>
+            <li><a href="services-web.html">Web Development</a></li>
+            <li><a href="services-app.html">App Development</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h5>Industries</h5>
+          <ul class="footer-links">
+            <li><a href="industries.html#healthcare">Healthcare</a></li>
+            <li><a href="industries.html#finance">Finance</a></li>
+            <li><a href="industries.html#education">Education</a></li>
+            <li><a href="industries.html#government">Government</a></li>
+            <li><a href="industries.html#sustainability">Sustainability</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h5>Company</h5>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 MITIGAI. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const mobileToggle = document.getElementById('mobileToggle');
+    const navMenu = document.getElementById('navMenu');
+    const header = document.getElementById('header');
     
-    <footer>
-        <p>&copy; 2025 MITIGAI. All Rights Reserved.</p>
-    </footer>
+    mobileToggle.addEventListener('click', () => navMenu.classList.toggle('active'));
+    window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 100));
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => navMenu.classList.remove('active'));
+    });
+    
+    // Form submission handling
+    const contactForm = document.getElementById('contactForm');
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const submitBtn = contactForm.querySelector('button[type="submit"]');
+      const originalText = submitBtn.textContent;
+      submitBtn.textContent = 'Sending...';
+      submitBtn.disabled = true;
+      
+      try {
+        const formData = new FormData(contactForm);
+        const response = await fetch(contactForm.action, {
+          method: 'POST',
+          body: formData,
+          headers: { 'Accept': 'application/json' }
+        });
+        
+        if (response.ok) {
+          contactForm.reset();
+          submitBtn.textContent = 'Message Sent!';
+          submitBtn.style.background = 'var(--secondary)';
+          setTimeout(() => {
+            submitBtn.textContent = originalText;
+            submitBtn.style.background = '';
+            submitBtn.disabled = false;
+          }, 3000);
+        } else {
+          throw new Error('Failed to send');
+        }
+      } catch (error) {
+        submitBtn.textContent = 'Error - Try Again';
+        submitBtn.style.background = '#ef4444';
+        setTimeout(() => {
+          submitBtn.textContent = originalText;
+          submitBtn.style.background = '';
+          submitBtn.disabled = false;
+        }, 3000);
+      }
+    });
+  </script>
 </body>
 </html>

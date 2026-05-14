@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MITIGAI Portfolio - Explore our AI, cybersecurity, web, and app development projects across healthcare, finance, education, and more.">
+  <title>Our Portfolio - MITIGAI</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">M</div>
+          MITIG<span>AI</span>
+        </a>
+        
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item">
+            <a href="services.html" class="nav-link">Services</a>
+            <ul class="dropdown">
+              <li><a href="services-ai.html" class="dropdown-link">AI Solutions</a></li>
+              <li><a href="services-cybersecurity.html" class="dropdown-link">Cybersecurity</a></li>
+              <li><a href="services-web.html" class="dropdown-link">Web Development</a></li>
+              <li><a href="services-app.html" class="dropdown-link">App Development</a></li>
+            </ul>
+          </li>
+          <li><a href="industries.html" class="nav-link">Industries</a></li>
+          <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li class="nav-cta">
+            <a href="contact.html" class="btn btn-primary btn-sm">Get Started</a>
+          </li>
+        </ul>
+        
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span class="current">Portfolio</span>
+      </div>
+      <h1>Our Portfolio</h1>
+      <p>Explore our work across AI, cybersecurity, web, and app development.</p>
+    </div>
+  </section>
+
+  <!-- Portfolio Filter & Grid -->
+  <section class="section">
+    <div class="container">
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="ai">AI Solutions</button>
+        <button class="filter-btn" data-filter="security">Cybersecurity</button>
+        <button class="filter-btn" data-filter="web">Web Development</button>
+        <button class="filter-btn" data-filter="app">App Development</button>
+      </div>
+      
+      <div class="portfolio-grid">
+        <!-- Project 1: AI-Powered HRMS -->
+        <div class="portfolio-card" data-category="ai web">
+          <div class="portfolio-image">
+            <span>👥</span>
+          </div>
+          <div class="portfolio-content">
+            <span class="portfolio-tag">AI + Web Development</span>
+            <h3>AI-Powered HRMS Platform</h3>
+            <p>Complete human resource management system with AI-driven analytics, automated recruitment workflows, predictive attrition modeling, and employee engagement insights for a healthcare network with 5,000+ employees.</p>
+            <div class="portfolio-tech">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>TensorFlow</span>
+              <span>PostgreSQL</span>
+              <span>AWS</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 2: Edge AI Mobile App -->
+        <div class="portfolio-card" data-category="ai app">
+          <div class="portfolio-image">
+            <span>📱</span>
+          </div>
+          <div class="portfolio-content">
+            <span class="portfolio-tag">Mobile + Edge AI</span>
+            <h3>Edge AI Field Service App</h3>
+            <p>Mobile application with on-device AI for equipment inspection, defect detection, and real-time reporting. Works offline in remote locations with automatic sync when connectivity is restored.</p>
+            <div class="portfolio-tech">
+              <span>Flutter</span>
+              <span>TensorFlow Lite</span>
+              <span>Firebase</span>
+              <span>Edge ML</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 3: Threat Intelligence Platform -->
+        <div class="portfolio-card" data-category="security">
+          <div class="portfolio-image">
+            <span>🛡️</span>
+          </div>
+          <div class="portfolio-content">
+            <span class="portfolio-tag">Cybersecurity</span>
+            <h3>MITP - Threat Intelligence Platform</h3>
+            <p>Enterprise-grade security platform with real-time threat detection, automated vulnerability management, and AI-powered attack prediction. Deployed across multiple financial institutions.</p>
+            <div class="portfolio-tech">
+              <span>Python</span>
+              <span>Machine Learning</span>
+              <span>Elasticsearch</span>
+              <span>React</span>
+              <span>Kafka</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 4: E-Learning Platform -->
+        <div class="portfolio-card" data-category="web ai">
+          <div class="portfolio-image">
+            <span>🎓</span>
+          </div>
+          <div class="portfolio-content">
+            <span class="portfolio-tag">EdTech + AI</span>
+            <h3>Adaptive Learning Platform</h3>
+            <p>AI-powered e-learning platform that personalizes content based on student performance, learning style, and goals. Includes video streaming, assessments, and progress tracking for 50,000+ students.</p>
+            <div class="portfolio-tech">
+              <span>Next.js</span>
+              <span>Python</span>
+              <span>FastAPI</span>
+              <span>MongoDB</span>
+              <span>Redis</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 5: Carbon Tracking Dashboard -->
+        <div class="portfolio-card" data-category="web ai">
+          <div class="portfolio-image">
+            <span>🌱</span>
+          </div>
+          <div class="portfolio-content">
+            <span class="portfolio-tag">Sustainability + AI</span>
+            <h3>Carbon Footprint Dashboard</h3>
+            <p>Comprehensive carbon tracking and ESG reporting platform for a manufacturing company. AI-powered emissions prediction, supply chain analysis, and automated regulatory reporting.</p>
+            <div class="portfolio-tech">
+              <span>React</span>
+              <span>Python</span>
+              <span>PostgreSQL</span>
+              <span>D3.js</span>
+              <span>AWS</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 6: Banking Mobile App -->
+        <div class="portfolio-card" data-category="app security">
+          <div class="portfolio-image">
+            <span>🏦</span>
+          </div>
+          <div class="portfolio-content">
+            <span class="portfolio-tag">FinTech + Security</span>
+            <h3>Secure Mobile Banking App</h3>
+            <p>Feature-rich mobile banking application with biometric authentication, real-time fraud detection, and seamless payment integration. Serving 100,000+ active users with 99.9% uptime.</p>
+            <div class="portfolio-tech">
+              <span>React Native</span>
+              <span>Node.js</span>
+              <span>Firebase</span>
+              <span>Biometrics</span>
+              <span>Encryption</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 7: Government Portal -->
+        <div class="portfolio-card" data-category="web">
+          <div class="portfolio-image">
+            <span>🏛️</span>
+          </div>
+          <div class="portfolio-content">
+            <span class="portfolio-tag">Government + Web</span>
+            <h3>Citizen Services Portal</h3>
+            <p>Unified digital platform for citizen services including permit applications, document verification, and grievance management. Fully accessible and available in multiple languages.</p>
+            <div class="portfolio-tech">
+              <span>Angular</span>
+              <span>Django</span>
+              <span>PostgreSQL</span>
+              <span>Docker</span>
+              <span>Azure</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 8: Telemedicine App -->
+        <div class="portfolio-card" data-category="app ai">
+          <div class="portfolio-image">
+            <span>🏥</span>
+          </div>
+          <div class="portfolio-content">
+            <span class="portfolio-tag">Healthcare + Mobile</span>
+            <h3>Telemedicine Platform</h3>
+            <p>HIPAA-compliant telemedicine application with video consultations, AI symptom checker, prescription management, and integration with hospital EHR systems.</p>
+            <div class="portfolio-tech">
+              <span>Flutter</span>
+              <span>Node.js</span>
+              <span>WebRTC</span>
+              <span>AI/ML</span>
+              <span>HL7 FHIR</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 9: Exposure Management -->
+        <div class="portfolio-card" data-category="security web">
+          <div class="portfolio-image">
+            <span>📊</span>
+          </div>
+          <div class="portfolio-content">
+            <span class="portfolio-tag">Cybersecurity</span>
+            <h3>MEMS - Exposure Management System</h3>
+            <p>Vulnerability management platform with automated scanning, risk prioritization, remediation tracking, and executive dashboards. Helps organizations reduce their attack surface.</p>
+            <div class="portfolio-tech">
+              <span>React</span>
+              <span>Python</span>
+              <span>Celery</span>
+              <span>PostgreSQL</span>
+              <span>Grafana</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="hero-stats" style="margin-top: 0; padding-top: 0; border-top: none;">
+        <div class="stat">
+          <div class="stat-number">50<span>+</span></div>
+          <div class="stat-label">Projects Delivered</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">30<span>+</span></div>
+          <div class="stat-label">Happy Clients</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">5</div>
+          <div class="stat-label">Industries Served</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">99<span>%</span></div>
+          <div class="stat-label">Client Satisfaction</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Ready to Build Your Project?</h2>
+      <p>Let's create something amazing together. Tell us about your vision.</p>
+      <div class="cta-buttons">
+        <a href="contact.html" class="btn btn-white btn-lg">Start Your Project</a>
+        <a href="services.html" class="btn btn-outline btn-lg">Explore Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">M</div>
+            MITIG<span>AI</span>
+          </a>
+          <p>AI-Powered Innovation Across Industries. We deliver intelligent technology solutions that transform businesses and drive growth.</p>
+          <div class="social-links mt-3">
+            <a href="https://linkedin.com/company/mitigai" class="social-link" aria-label="LinkedIn">in</a>
+            <a href="https://twitter.com/mitigai" class="social-link" aria-label="Twitter">𝕏</a>
+            <a href="https://github.com/mitigai" class="social-link" aria-label="GitHub">⌘</a>
+          </div>
+        </div>
+        
+        <div class="footer-column">
+          <h5>Services</h5>
+          <ul class="footer-links">
+            <li><a href="services-ai.html">AI Solutions</a></li>
+            <li><a href="services-cybersecurity.html">Cybersecurity</a></li>
+            <li><a href="services-web.html">Web Development</a></li>
+            <li><a href="services-app.html">App Development</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h5>Industries</h5>
+          <ul class="footer-links">
+            <li><a href="industries.html#healthcare">Healthcare</a></li>
+            <li><a href="industries.html#finance">Finance</a></li>
+            <li><a href="industries.html#education">Education</a></li>
+            <li><a href="industries.html#government">Government</a></li>
+            <li><a href="industries.html#sustainability">Sustainability</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h5>Company</h5>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 MITIGAI. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const mobileToggle = document.getElementById('mobileToggle');
+    const navMenu = document.getElementById('navMenu');
+    const header = document.getElementById('header');
+    
+    mobileToggle.addEventListener('click', () => navMenu.classList.toggle('active'));
+    window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 100));
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => navMenu.classList.remove('active'));
+    });
+    
+    // Portfolio filter functionality
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const portfolioCards = document.querySelectorAll('.portfolio-card');
+    
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Update active button
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+        
+        const filter = button.getAttribute('data-filter');
+        
+        portfolioCards.forEach(card => {
+          if (filter === 'all' || card.getAttribute('data-category').includes(filter)) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

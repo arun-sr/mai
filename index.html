@@ -1,44 +1,477 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MITIGAI - AI-Powered Cybersecurity</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MITIGAI - AI-Powered Innovation Across Industries. Expert solutions in AI, Cybersecurity, Web Development, and App Development for Healthcare, Finance, Education, Government, and Sustainability sectors.">
+  <meta name="keywords" content="AI solutions, cybersecurity, web development, app development, machine learning, digital transformation">
+  <title>MITIGAI - AI-Powered Innovation Across Industries</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">MitigAI</div>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="product.html">Products</a>
-                <a href="about.html">About Us</a>
-                <a href="contact.html">Contact Us</a>
-            </nav>
-        </div>
-    </header>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">M</div>
+          MITIG<span>AI</span>
+        </a>
+        
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li class="nav-item">
+            <a href="services.html" class="nav-link">Services</a>
+            <ul class="dropdown">
+              <li><a href="services-ai.html" class="dropdown-link">AI Solutions</a></li>
+              <li><a href="services-cybersecurity.html" class="dropdown-link">Cybersecurity</a></li>
+              <li><a href="services-web.html" class="dropdown-link">Web Development</a></li>
+              <li><a href="services-app.html" class="dropdown-link">App Development</a></li>
+            </ul>
+          </li>
+          <li><a href="industries.html" class="nav-link">Industries</a></li>
+          <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li class="nav-cta">
+            <a href="contact.html" class="btn btn-primary btn-sm">Get Started</a>
+          </li>
+        </ul>
+        
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-float hero-float-1"></div>
+    <div class="hero-float hero-float-2"></div>
+    <div class="hero-float hero-float-3"></div>
     
     <div class="container">
-        <section class="hero">
-            <h2>Cybersecurity Meets AI</h2>
-            <p>The narrative of cybersecurity is characterized by the ever-growing complexity of attacks, necessitating rapid and effective responses...</p>
-        </section>
-
-        <section class="content">
-            <h3>Why Choose MITIGAI?</h3>
-            <ul>
-                <li>Certified by CERT Panel for information security and data protection</li>
-                <li>No use of confidential or personal data</li>
-                <li>Protection of sensitive information in the payload</li>
-                <li>Unbiased and reliable predictions</li>
-                <li>Algorithmic translucency with explainable AI insights</li>
-            </ul>
-        </section>
+      <div class="hero-content">
+        <div class="hero-badge">
+          🚀 AI-Powered Innovation Across Industries
+        </div>
+        <h1>Transform Your Business with <span>Intelligent Technology</span></h1>
+        <p class="hero-description">
+          From cutting-edge AI solutions to robust cybersecurity, full-stack development, and mobile apps — we deliver end-to-end technology solutions that drive growth and innovation.
+        </p>
+        <div class="hero-buttons">
+          <a href="contact.html" class="btn btn-primary btn-lg">Start Your Project</a>
+          <a href="services.html" class="btn btn-outline btn-lg">Explore Services</a>
+        </div>
+        
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-number">50<span>+</span></div>
+            <div class="stat-label">Projects Delivered</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">5<span>+</span></div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">30<span>+</span></div>
+            <div class="stat-label">Happy Clients</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">5</div>
+            <div class="stat-label">Industries Served</div>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">What We Do</span>
+        <h2>Comprehensive Technology Solutions</h2>
+        <p>We combine expertise in AI, security, and development to deliver solutions that transform businesses across industries.</p>
+      </div>
+      
+      <div class="services-grid">
+        <!-- AI Solutions -->
+        <div class="service-card">
+          <div class="service-icon">🤖</div>
+          <h3>AI Solutions</h3>
+          <p>Leverage the power of artificial intelligence to automate processes, gain insights, and create intelligent experiences.</p>
+          <ul class="service-list">
+            <li>Machine Learning Models</li>
+            <li>Natural Language Processing</li>
+            <li>AI Strategy Consulting</li>
+            <li>Intelligent Automation</li>
+          </ul>
+          <a href="services-ai.html" class="btn btn-secondary btn-sm">Learn More</a>
+        </div>
+        
+        <!-- Cybersecurity -->
+        <div class="service-card">
+          <div class="service-icon">🛡️</div>
+          <h3>Cybersecurity</h3>
+          <p>Protect your digital assets with our AI-powered security solutions and expert threat intelligence.</p>
+          <ul class="service-list">
+            <li>Threat Intelligence Platform</li>
+            <li>Vulnerability Management</li>
+            <li>Compliance & Audits</li>
+            <li>Security Operations</li>
+          </ul>
+          <a href="services-cybersecurity.html" class="btn btn-secondary btn-sm">Learn More</a>
+        </div>
+        
+        <!-- Web Development -->
+        <div class="service-card">
+          <div class="service-icon">💻</div>
+          <h3>Web Development</h3>
+          <p>Build powerful, scalable web applications with modern technologies and best practices.</p>
+          <ul class="service-list">
+            <li>React & Frontend Development</li>
+            <li>Node.js & Backend Systems</li>
+            <li>Full-Stack Solutions</li>
+            <li>API Development</li>
+          </ul>
+          <a href="services-web.html" class="btn btn-secondary btn-sm">Learn More</a>
+        </div>
+        
+        <!-- App Development -->
+        <div class="service-card">
+          <div class="service-icon">📱</div>
+          <h3>App Development</h3>
+          <p>Create stunning mobile experiences with native and cross-platform applications.</p>
+          <ul class="service-list">
+            <li>iOS & Android Native</li>
+            <li>Flutter & React Native</li>
+            <li>Progressive Web Apps</li>
+            <li>Edge Applications</li>
+          </ul>
+          <a href="services-app.html" class="btn btn-secondary btn-sm">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Industries Section -->
+  <section class="section section-gray" id="industries">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Industries We Serve</span>
+        <h2>Solutions Tailored for Your Sector</h2>
+        <p>We understand the unique challenges of each industry and deliver customized solutions that drive results.</p>
+      </div>
+      
+      <div class="industries-grid">
+        <div class="industry-card">
+          <div class="industry-icon">🏥</div>
+          <h4>Healthcare</h4>
+          <p>HIPAA-compliant solutions for patient care, diagnostics, and health management systems.</p>
+        </div>
+        
+        <div class="industry-card">
+          <div class="industry-icon">🏦</div>
+          <h4>Finance & Banking</h4>
+          <p>Secure fintech solutions, fraud detection, and regulatory compliance systems.</p>
+        </div>
+        
+        <div class="industry-card">
+          <div class="industry-icon">🎓</div>
+          <h4>Education</h4>
+          <p>E-learning platforms, student management, and AI-powered educational tools.</p>
+        </div>
+        
+        <div class="industry-card">
+          <div class="industry-icon">🏛️</div>
+          <h4>Government</h4>
+          <p>Secure, scalable solutions for public services and digital governance.</p>
+        </div>
+        
+        <div class="industry-card">
+          <div class="industry-icon">🌱</div>
+          <h4>Sustainability</h4>
+          <p>Green tech solutions, carbon tracking, and environmental monitoring systems.</p>
+        </div>
+      </div>
+      
+      <div class="text-center mt-5">
+        <a href="industries.html" class="btn btn-primary">Explore All Industries</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Why MITIGAI</span>
+        <h2>Your Trusted Technology Partner</h2>
+        <p>We combine deep technical expertise with industry knowledge to deliver solutions that make a real impact.</p>
+      </div>
+      
+      <div class="features-grid">
+        <div class="feature">
+          <div class="feature-icon">⚡</div>
+          <h4>AI-First Approach</h4>
+          <p>We integrate intelligent automation and AI capabilities into every solution we build.</p>
+        </div>
+        
+        <div class="feature">
+          <div class="feature-icon">🔒</div>
+          <h4>Security by Design</h4>
+          <p>Our cybersecurity DNA ensures every product is built with security at its core.</p>
+        </div>
+        
+        <div class="feature">
+          <div class="feature-icon">🎯</div>
+          <h4>Industry Expertise</h4>
+          <p>Deep domain knowledge in Healthcare, Finance, Education, Government, and Sustainability.</p>
+        </div>
+        
+        <div class="feature">
+          <div class="feature-icon">🚀</div>
+          <h4>End-to-End Delivery</h4>
+          <p>From strategy to deployment, we handle the complete technology lifecycle.</p>
+        </div>
+        
+        <div class="feature">
+          <div class="feature-icon">💡</div>
+          <h4>Innovation Focused</h4>
+          <p>We stay ahead of technology trends to bring cutting-edge solutions to our clients.</p>
+        </div>
+        
+        <div class="feature">
+          <div class="feature-icon">🤝</div>
+          <h4>Partnership Model</h4>
+          <p>We work as an extension of your team, committed to your long-term success.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects -->
+  <section class="section" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Our Work</span>
+        <h2>Featured Projects</h2>
+        <p>Explore some of our recent work across AI, cybersecurity, and digital transformation.</p>
+      </div>
+      
+      <div class="portfolio-grid">
+        <div class="portfolio-card">
+          <div class="portfolio-image">
+            <span>🏥</span>
+          </div>
+          <div class="portfolio-content">
+            <span class="portfolio-tag">Healthcare + AI</span>
+            <h3>AI-Powered HRMS Platform</h3>
+            <p>Complete human resource management system with AI-driven analytics, automated workflows, and predictive insights for a healthcare network.</p>
+            <div class="portfolio-tech">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>TensorFlow</span>
+              <span>PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="portfolio-card">
+          <div class="portfolio-image">
+            <span>📱</span>
+          </div>
+          <div class="portfolio-content">
+            <span class="portfolio-tag">Mobile + Edge</span>
+            <h3>Edge AI Mobile Application</h3>
+            <p>Mobile app with on-device AI processing for real-time image recognition and data analysis without cloud dependency.</p>
+            <div class="portfolio-tech">
+              <span>Flutter</span>
+              <span>TensorFlow Lite</span>
+              <span>Edge ML</span>
+              <span>Firebase</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="portfolio-card">
+          <div class="portfolio-image">
+            <span>🛡️</span>
+          </div>
+          <div class="portfolio-content">
+            <span class="portfolio-tag">Cybersecurity</span>
+            <h3>Threat Intelligence Platform</h3>
+            <p>Enterprise-grade security platform with real-time threat detection, vulnerability management, and automated response.</p>
+            <div class="portfolio-tech">
+              <span>Python</span>
+              <span>Machine Learning</span>
+              <span>Elasticsearch</span>
+              <span>React</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center mt-5">
+        <a href="portfolio.html" class="btn btn-primary">View All Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section section-gray">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Testimonials</span>
+        <h2>What Our Clients Say</h2>
+        <p>We're proud of the relationships we've built and the results we've delivered.</p>
+      </div>
+      
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            "MITIGAI transformed our operations with their AI-powered HRMS. The automation alone saved us hundreds of hours, and the predictive analytics have improved our retention rates significantly."
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">RK</div>
+            <div class="testimonial-info">
+              <h5>Rajesh Kumar</h5>
+              <p>CTO, HealthFirst Solutions</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            "Their cybersecurity expertise is unmatched. The threat intelligence platform they built has become critical infrastructure for our security operations center."
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">SP</div>
+            <div class="testimonial-info">
+              <h5>Sarah Patel</h5>
+              <p>CISO, SecureBank Corp</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            "The mobile app they developed exceeded our expectations. The edge AI features work flawlessly, and our users love the seamless experience."
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">AM</div>
+            <div class="testimonial-info">
+              <h5>Anita Menon</h5>
+              <p>Product Lead, EduTech Plus</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Ready to Transform Your Business?</h2>
+      <p>Let's discuss how our AI-powered solutions can drive innovation and growth for your organization.</p>
+      <div class="cta-buttons">
+        <a href="contact.html" class="btn btn-white btn-lg">Start a Conversation</a>
+        <a href="services.html" class="btn btn-outline btn-lg">Explore Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">M</div>
+            MITIG<span>AI</span>
+          </a>
+          <p>AI-Powered Innovation Across Industries. We deliver intelligent technology solutions that transform businesses and drive growth.</p>
+          <div class="social-links mt-3">
+            <a href="https://linkedin.com/company/mitigai" class="social-link" aria-label="LinkedIn">in</a>
+            <a href="https://twitter.com/mitigai" class="social-link" aria-label="Twitter">𝕏</a>
+            <a href="https://github.com/mitigai" class="social-link" aria-label="GitHub">⌘</a>
+          </div>
+        </div>
+        
+        <div class="footer-column">
+          <h5>Services</h5>
+          <ul class="footer-links">
+            <li><a href="services-ai.html">AI Solutions</a></li>
+            <li><a href="services-cybersecurity.html">Cybersecurity</a></li>
+            <li><a href="services-web.html">Web Development</a></li>
+            <li><a href="services-app.html">App Development</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h5>Industries</h5>
+          <ul class="footer-links">
+            <li><a href="industries.html#healthcare">Healthcare</a></li>
+            <li><a href="industries.html#finance">Finance</a></li>
+            <li><a href="industries.html#education">Education</a></li>
+            <li><a href="industries.html#government">Government</a></li>
+            <li><a href="industries.html#sustainability">Sustainability</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h5>Company</h5>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 MITIGAI. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const mobileToggle = document.getElementById('mobileToggle');
+    const navMenu = document.getElementById('navMenu');
     
-    <footer>
-        <p>&copy; 2025 MITIGAI. All Rights Reserved.</p>
-    </footer>
+    mobileToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+    
+    // Header scroll effect
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+    
+    // Close mobile menu when clicking a link
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+      });
+    });
+  </script>
 </body>
 </html>
